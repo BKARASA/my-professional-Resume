@@ -18,7 +18,7 @@ jobs:
               with: 
                 scan-type: 'fs'
                 severity: HIGH,CRITICAL
-                exit-code: 0
+                exit-code: 1
             - name: Build Docker Image   
               run: docker build -t 981974821555.dkr.ecr.us-east-1.amazonaws.com/my-repos:latest . 
             - name: Scan Image with Trivy
