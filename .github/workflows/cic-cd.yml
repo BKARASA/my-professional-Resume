@@ -43,4 +43,4 @@ jobs:
                 uses: aws-actions/amazon-ecr-login@v2
 
             -   name: push image to ECR
-                run: docker push${{secrets.ECR_REPO}}/my-repos:latest
+                run: docker push ${{secrets.ECR_REPO}}/my-repos:latest
