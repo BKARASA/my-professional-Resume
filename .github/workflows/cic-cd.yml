@@ -5,6 +5,9 @@ on:
        # pull requests:
        #     branches:['main', 'dev']
         branches: [ 'main']
+permissions:
+    id-token: write
+    contents: read
 
 
 jobs:
@@ -38,4 +41,4 @@ jobs:
             -   name: Login to Amazon ECR
                 id: login-ecr
                 uses: aws-actions/amazon-ecr-login@v2
-                
+
